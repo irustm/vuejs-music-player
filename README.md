@@ -1,6 +1,8 @@
 # vuejs-music-player
 
 > A Vue.js lite music player
+ [Demo](https://jamaks.github.io/vuejs-music-player/dist/) 
+ 
 <p align="center">
 <img src="static/desktop.png">
 </p>
