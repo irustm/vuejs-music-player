@@ -1,16 +1,18 @@
 <template>
 <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
-      <v-card>
+      <v-card v-if="allPlayList[currentIndex]">
          <v-card-media
           class="white--text"
-          height="400px"
-          src="/static/player_default_cover.png"
+          height="300px"
+          :src="allPlayList[currentIndex].avatar"
         >
           <v-container fill-height fluid>
             <v-layout fill-height>
               <v-flex xs12 align-end flexbox>
-                <span class="headline">Top songs</span>
+                <span class="headline avatar-text">{{allPlayList[currentIndex].subtitle}}</span>
+                <br/>
+                <span class="avatar-text">{{allPlayList[currentIndex].title}}</span>
               </v-flex>
             </v-layout>
           </v-container>
@@ -27,9 +29,10 @@
               <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-action>
-              <v-btn icon ripple>
+              {{ item.time }}
+              <!-- <v-btn icon ripple>
                 <v-icon color="grey lighten-1">info</v-icon>
-              </v-btn>
+              </v-btn> -->
             </v-list-tile-action>
           </v-list-tile>
 
@@ -65,3 +68,8 @@ export default {
   }
 };
 </script>
+<style>
+.avatar-text{
+  text-shadow: 1px 1px 2px black;
+}
+</style>
