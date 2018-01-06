@@ -3,7 +3,7 @@ import list from '../api/list'
 const state = {
   all: [],
   currentIndex: 0,
-  isPlay: false
+  isPlay: true
 }
 
 const actions = {

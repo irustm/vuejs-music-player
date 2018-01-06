@@ -100,6 +100,8 @@ var sound = new Howl({
     "https://freemusicarchive.org/file/music/ccCommunity/Dee_Yan-Key/post_bellum/Dee_Yan-Key_-_06_-_Post_Bellum.mp3"
   ]
 });
+// autoplay
+sound.play();
 var soundVisualization = function() {
   var analyser = Howler.ctx.createAnalyser();
   var WIDTH = 48;
