@@ -4,6 +4,7 @@
 <p align="center">
 <img src="static/desktop.png">
 </p>
+
 ## Build Setup
 
 ``` bash
