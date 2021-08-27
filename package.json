@@ -2,7 +2,7 @@
   "name": "vuejs-music-player",
   "version": "1.0.0",
   "description": "A Vue.js lite music player",
-  "author": "jamaks <jamakrus@gmail.com>",
+  "author": "jamaks",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
